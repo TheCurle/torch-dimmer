@@ -1,10 +1,10 @@
 {
   "schemaVersion": 1,
-  "id": "dimmer",
+  "id": "brightdoor",
   "version": "${version}",
 
-  "name": "Torch Dimmer",
-  "description": "Removes the light emission from redstone torches.",
+  "name": "Brightdoor",
+  "description": "Makes open trapdoors emit light.",
   "authors": [
     "Curle"
   ],
@@ -26,7 +26,6 @@
 
   "depends": {
     "fabricloader": ">=0.11.3",
-    "fabric": "*",
     "minecraft": "1.17.x",
     "java": ">=16"
   },
