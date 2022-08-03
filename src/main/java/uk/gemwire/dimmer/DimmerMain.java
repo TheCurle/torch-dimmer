@@ -20,7 +20,7 @@ public class DimmerMain implements ModInitializer {
             Field lightEmission = BlockBehaviour.BlockStateBase.class.getDeclaredField("field_23167");
             lightEmission.setAccessible(true);
 
-            StateDefinition<?, ?> openDef = (StateDefinition<?, ?>) stateDef.get(Blocks.OAK_TRAPDOOR);
+            StateDefinition<?, ?> openDef = (StateDefinition<?, ?>) stateDef.get(Blocks.IRON_TRAPDOOR);
 
             openDef.getPossibleStates().forEach((state) -> {
                 try {
@@ -31,9 +31,9 @@ public class DimmerMain implements ModInitializer {
                 }
             });
 
-            stateDef.set(Blocks.OAK_TRAPDOOR, openDef);
+            stateDef.set(Blocks.IRON_TRAPDOOR, openDef);
 
-            LogManager.getLogger("dimmer").info("Oak Trapdoor Luminance fixed.");
+            LogManager.getLogger("dimmer").info("Iron Trapdoor Luminance fixed.");
         } catch (NoSuchFieldException | IllegalAccessException e) {
             e.printStackTrace();
         }
