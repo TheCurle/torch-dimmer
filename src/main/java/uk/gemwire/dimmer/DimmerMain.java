@@ -41,7 +41,7 @@ public class DimmerMain implements ModInitializer {
             stateDef.set(Blocks.REDSTONE_TORCH, standingDef);
             stateDef.set(Blocks.REDSTONE_WALL_TORCH, wallDef);
 
-            LogManager.getLogger("dimmer").info("Restone Torch Luminance fixed.");
+            LogManager.getLogger("dimmer").info("Redstone Torch Luminance fixed.");
         } catch (NoSuchFieldException | IllegalAccessException e) {
             e.printStackTrace();
         }
